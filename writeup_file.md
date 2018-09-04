@@ -28,20 +28,20 @@ The goals / steps of this project are the following:
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 6 steps:
-    1. I converted the images to grayscale.
-    ![alt text][image1]
-    2. I applied gaussian blue to the gray image to emliminate noise.
-    3. I applied canny edge detection to detect edges in the image.
-    ![alt text][image2]
-    4. I masked that image with a mask image to detect only the lane lines in the road.
-    ![alt text][image3]    
-    5. I applied hough transform to get the lines in the image.
-    6. I drew the lane lines using the function draw_lines after editing it. Here is how it works:
-        i.  It gets the slope of the line.
-        ii. It seperates the postive slope from the negative one as one line will have a positive slope and the other will                              have a negative one.
-        iii. it gets the average of the positive slope, the average of the negative slope, the average of the intersection 
-            with the intersection with the y-axis for both lines. y = mx + c.
-        iv. It uses the most far away points at the end of the lane line and the height of the image to draw a staright line.
+1. I converted the images to grayscale.
+![alt text][image1]
+2. I applied gaussian blue to the gray image to emliminate noise.
+3. I applied canny edge detection to detect edges in the image.
+![alt text][image2]
+4. I masked that image with a mask image to detect only the lane lines in the road.
+![alt text][image3]    
+5. I applied hough transform to get the lines in the image.
+6. I drew the lane lines using the function draw_lines after editing it. Here is how it works:
+    i.  It gets the slope of the line.
+    ii. It seperates the postive slope from the negative one as one line will have a positive slope and the other will                              have a negative one.
+    iii. it gets the average of the positive slope, the average of the negative slope, the average of the intersection 
+        with the intersection with the y-axis for both lines. y = mx + c.
+    iv. It uses the most far away points at the end of the lane line and the height of the image to draw a staright line.
 ![alt text][image4]
 ![alt text][image5] 
 
