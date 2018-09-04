@@ -57,7 +57,7 @@ One potential shortcoming would be what would happen when a car is just infront 
 Another shortcoming could be if there are drawings or something spilled on the road ( say oil or something!).
 
 Another shortcoming could be if the camera is moved to another spot !! our way of detection lane lines relies heavily on a constant spot for
-    the camera!!.
+    the camera!.
 
 ---
 
