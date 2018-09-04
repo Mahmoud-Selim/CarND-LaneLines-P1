@@ -37,11 +37,11 @@ My pipeline consisted of 6 steps:
 ![alt text][image3]    
 5. I applied hough transform to get the lines in the image.
 6. I drew the lane lines using the function draw_lines after editing it. Here is how it works:
-1.  It gets the slope of the line.
-2. It seperates the postive slope from the negative one as one line will have a positive slope and the other will                               have a negative one.
-3. it gets the average of the positive slope, the average of the negative slope, the average of the intersection 
+    1. It gets the slope of the line.
+    2. It seperates the postive slope from the negative one as one line will have a positive slope and the other will                               have a negative one.
+    3. It gets the average of the positive slope, the average of the negative slope, the average of the intersection 
     with the intersection with the y-axis for both lines. y = mx + c.
-4. It uses the most far away points at the end of the lane line and the height of the image to draw a staright line.
+    4. It uses the most far away points at the end of the lane line and the height of the image to draw a staright line.
 ![alt text][image4]
 ![alt text][image5] 
 
